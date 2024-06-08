@@ -1,0 +1,171 @@
+[
+    {
+        "dish": "Amanida Cèsar",
+        "ingredients": "Enciam, pollastre, formatge parmesà, crostons, amaniment Cèsar",
+        "category": "Entrants",
+        "type": [
+            "Sense gluten"
+        ],
+        "price": 8.5,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Bruschetta",
+        "ingredients": "Pa, tomàquets, all, alfàbrega, oli d'oliva",
+        "category": "Entrants",
+        "type": [
+            "Vegetarià"
+        ],
+        "price": 6.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Gaspatxo",
+        "ingredients": "Tomàquet, cogombre, pebrot, ceba, all, oli d'oliva, vinagre",
+        "category": "Entrants",
+        "type": [
+            "Vegetarià",
+            "Sense al·lèrgens"
+        ],
+        "price": 7.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Hummus",
+        "ingredients": "Cigrons, tahina, all, llimona, oli d'oliva",
+        "category": "Entrants",
+        "type": [
+            "Vegetarià",
+            "Sense gluten"
+        ],
+        "price": 5.5,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Tàrtar de Tonyina",
+        "ingredients": "Tonyina fresca, alvocat, salsa de soja, sèsam",
+        "category": "Entrants",
+        "type": [
+            "Sense gluten",
+            "Sense al·lèrgens"
+        ],
+        "price": 12.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Paella",
+        "ingredients": "Arròs, marisc, pollastre, conill, verdures, safrà",
+        "category": "Segons plats",
+        "type": [
+            "Sense gluten"
+        ],
+        "price": 15.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Lasanya Vegetariana",
+        "ingredients": "Pasta de lasanya, espinacs, ricotta, mozzarella, salsa de tomàquet",
+        "category": "Segons plats",
+        "type": [
+            "Vegetarià"
+        ],
+        "price": 14.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Pollastre al Curri",
+        "ingredients": "Pollastre, llet de coco, curri, arròs basmati",
+        "category": "Segons plats",
+        "type": [
+            "Sense gluten"
+        ],
+        "price": 13.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Bacallà a la Vizcaïna",
+        "ingredients": "Bacallà, pebrots, tomàquet, ceba, all",
+        "category": "Segons plats",
+        "type": [
+            "Sense al·lèrgens"
+        ],
+        "price": 16.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Hamburguesa Vegetariana",
+        "ingredients": "Pa d'hamburguesa, hamburguesa de llenties, enciam, tomàquet, alvocat",
+        "category": "Segons plats",
+        "type": [
+            "Vegetarià"
+        ],
+        "price": 11.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Pastís de Formatge",
+        "ingredients": "Formatge crema, ous, sucre, base de galeta",
+        "category": "Postres",
+        "type": [
+            "Sense al·lèrgens"
+        ],
+        "price": 6.5,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Mousse de Xocolata",
+        "ingredients": "Xocolata, ous, nata, sucre",
+        "category": "Postres",
+        "type": [
+            "Sense gluten"
+        ],
+        "price": 5.5,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Fruita de Temporada",
+        "ingredients": "Fruita fresca variada",
+        "category": "Postres",
+        "type": [
+            "Vegetarià",
+            "Sense al·lèrgens"
+        ],
+        "price": 4.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Crema Catalana",
+        "ingredients": "Llet, ous, sucre, canyella, llimona",
+        "category": "Postres",
+        "type": [
+            "Sense gluten"
+        ],
+        "price": 5.0,
+        "isOnMenu": true,
+        "image": ""
+    },
+    {
+        "dish": "Gelat Artesanal",
+        "ingredients": "Llet, nata, sucre, sabors naturals",
+        "category": "Postres",
+        "type": [
+            "Vegetarià"
+        ],
+        "price": 4.5,
+        "isOnMenu": true,
+        "image": ""
+    }
+]
