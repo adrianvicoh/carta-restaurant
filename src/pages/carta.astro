@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Plat from "../components/Plat.astro";
+import CartaController from "../controllers/CartaController";
+const cartaCompleta = new CartaController();
+const carta = await cartaCompleta.getCarta();
+const categories = ["Entrants","Segons plats","Postres"];
+---
+
+<Layout>
+    <div class="row">
+        <!--{categories.map(categoria => carta.filter(plat => plat.category === categoria).map(plat => <Plat plat={plat}/>))}-->
+        
+        {carta.map(plat => <Plat plat={plat}/>)}
+    </div>
+</Layout>

@@ -1,0 +1,7 @@
+.platImgCard {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 2px solid;
+}

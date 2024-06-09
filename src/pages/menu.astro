@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Plat from "../components/Plat.astro";
+import CartaController from "../controllers/CartaController";
+const cartaCompleta = new CartaController();
+const carta = await cartaCompleta.getCarta();
+---
+
+<Layout>
+    
+</Layout>

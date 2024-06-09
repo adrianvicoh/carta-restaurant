@@ -1,0 +1,19 @@
+---
+const { plat } = Astro.props;
+---
+
+<div class="col-6">
+    <div class="card p-3 mt-3">
+        <div class="row">
+            <div class="col-4">
+                <img src={plat.image} class="card-img-top platImgCard" alt="plat">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title">{plat.dish}</h5>
+                    <p class="card-text">{plat.ingredients}</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
