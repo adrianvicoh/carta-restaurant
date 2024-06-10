@@ -5,6 +5,16 @@
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -56px;
+}
+
+.mainTitle {
+    color: white;
+    text-align: center;
+    margin: auto;
 }
 
 /*Menu*/
