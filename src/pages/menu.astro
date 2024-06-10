@@ -1,11 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Plat from "../components/Plat.astro";
-import CartaController from "../controllers/CartaController";
+    import CartaController from "../controllers/CartaController";
 const cartaCompleta = new CartaController();
 const carta = await cartaCompleta.getCarta();
+const categories = ["Entrants","Segons plats","Postres"];
 ---
 
 <Layout>
-    
+    <div class="container">
+        <div class="row">
+            <h1>Menu del dia</h1>
+            <h1>Preu: 11€</h1>
+        </div>
+        <div class="row">
+            {categories.map(categoria => (
+                <div class="col-6">
+                    <div class="menuSection">
+                        <h2>{categoria}</h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    {carta.filter(plat => plat.category === categoria && plat.isOnMenu).map(plat => (
+                        <div class="row">
+                            <div class="col-6"><h4>{plat.dish}</h4></div>
+                            <div class="col-6"><p>{plat.price}</p></div>
+                        </div>
+                    ))}
+                </div>
+            ))}
+        </div>
+    </div>
 </Layout>
