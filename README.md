@@ -1,3 +1,8 @@
+# Carta de Restaurante
+Proyecto de prueba para página my simple de restaurante hecho con Astro. Ejercicio para conectar a una API de NocoDB. Publicado en Netlify:
+
+https://restaurant-avh.netlify.app
+
 # Astro Starter Kit: Minimal
 
 ```sh
