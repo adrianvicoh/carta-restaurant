@@ -10,6 +10,7 @@ if (Astro.request.method === "POST") {
     console.log(dataJSON);
     const response = await reserva.createItem(dataJSON);
     console.log(response);
+    Astro.redirect("/reserva");
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
@@ -22,7 +23,7 @@ if (Astro.request.method === "POST") {
     <div class="row">
         <h1 class="mt-3">Reserva de taula</h1>
     </div>
-    <form method="post" class="mt-3">
+    <form action="/reservaPOST" method="post" class="mt-3">
         <div class="row">
             <div class="col-6">
                 <label for="name">Nom</label><br />
@@ -39,7 +40,7 @@ if (Astro.request.method === "POST") {
                 <input type="tel" id="tel" name="tel" required />
             </div>
             <div class="col-6">
-                <label for="date">DAta</label><br />
+                <label for="date">Data</label><br />
                 <input type="date" id="date" name="date" />
             </div>
         </div>

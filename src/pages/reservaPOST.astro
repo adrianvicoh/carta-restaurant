@@ -1,0 +1,19 @@
+---
+import ReservaController from "../controllers/ReservaController";
+const reserva = new ReservaController();
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const dataJSON = {"name": data.get("name"),"email": data.get("email"),"tel":data.get("tel"),"date":data.get("date")};
+    console.log(dataJSON);
+    const response = await reserva.createItem(dataJSON);
+    console.log(response);
+    return Astro.redirect("/reserva");
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+---
