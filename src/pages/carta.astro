@@ -8,9 +8,18 @@ const categories = ["Entrants","Segons plats","Postres"];
 ---
 
 <Layout>
-    <div class="row">
-        <!--{categories.map(categoria => carta.filter(plat => plat.category === categoria).map(plat => <Plat plat={plat}/>))}-->
-        
-        {carta.map(plat => <Plat plat={plat}/>)}
+    <div class="container">
+        <div class="row">
+            {categories.map(categoria => (
+                 <h1 class="titolCategories mt-4 mb-2">{categoria}</h1>
+                 <div class="row">
+                    {carta.filter(plat => plat.category === categoria).map(plat => <Plat plat={plat}/>)}
+                 </div>
+                 )
+            )}
+            
+            <!--{carta.map(plat => <Plat plat={plat}/>)}-->
+        </div>
     </div>
+    
 </Layout>

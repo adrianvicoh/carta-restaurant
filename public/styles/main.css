@@ -1,7 +1,24 @@
+/*Home*/
+
+.mainHeader {
+    background-image: url("/img/img001.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*Menu*/
+
 .platImgCard {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 100px;
     border: 2px solid;
+}
+
+.titolCategories {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid orange;
 }
