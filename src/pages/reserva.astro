@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import ReservaController from "../controllers/ReservaController";
 const reserva = new ReservaController();
+const dadesReserves = await reserva.getAll();
 
 if (Astro.request.method === "POST") {
   try {
@@ -51,6 +52,27 @@ if (Astro.request.method === "POST") {
                 </div>
             </div>
         </form>
+        <div class="row">
+            <h1 class="mt-5 mb-3">Llista de reserves</h1>
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Telèfon</th>
+                        <th>Data</th>
+                    </tr>
+                    {dadesReserves.map(reserva => (
+                        <tr>
+                            <td>{reserva.name}</td>
+                            <td>{reserva.email}</td>
+                            <td>{reserva.tel}</td>
+                            <td>{reserva.date}</td>
+                        </tr>
+                    ))}
+                </table>
+            </div>
+        </div>
     </div>
     
 </Layout>
