@@ -1,7 +1,52 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ReservaController from "../controllers/ReservaController";
+const reserva = new ReservaController();
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const dataJSON = {"name": data.get("name"),"email": data.get("email"),"tel":data.get("tel"),"date":data.get("date")};
+    console.log(dataJSON);
+    const response = await reserva.createItem(dataJSON);
+    console.log(response);
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
 ---
 
 <Layout>
-    
+    <div class="row">
+        <h1 class="mt-3">Reserva de taula</h1>
+    </div>
+    <form method="post" class="mt-3">
+        <div class="row">
+            <div class="col-6">
+                <label for="name">Nom</label><br />
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="col-6">
+                <label for="mail">Correo electrónico</label><br />
+                <input type="email" id="email" name="email" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="phone">Telèfon</label><br />
+                <input type="tel" id="tel" name="tel" required />
+            </div>
+            <div class="col-6">
+                <label for="date">DAta</label><br />
+                <input type="date" id="date" name="date" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <input class="btn btn-primary mt-4" type="submit" value="Fer reserva" />
+            </div>
+        </div>
+    </form>
 </Layout>

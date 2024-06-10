@@ -7,8 +7,7 @@ class ReservaController extends BaseController {
         super('m9zdxbcowyzyj80', 'bookings');
     }
 
-
-
+    
 }
 
 
