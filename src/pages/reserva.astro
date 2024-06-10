@@ -3,21 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import ReservaController from "../controllers/ReservaController";
 const reserva = new ReservaController();
 const dadesReserves = await reserva.getAll();
-
-if (Astro.request.method === "POST") {
-  try {
-    const data = await Astro.request.formData();
-    const dataJSON = {"name": data.get("name"),"email": data.get("email"),"tel":data.get("tel"),"date":data.get("date")};
-    console.log(dataJSON);
-    const response = await reserva.createItem(dataJSON);
-    console.log(response);
-    Astro.redirect("/reserva");
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
-  }
-}
 ---
 
 <Layout>
