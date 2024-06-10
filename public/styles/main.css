@@ -31,3 +31,12 @@
     padding-bottom: 20px;
     border-bottom: 3px solid orange;
 }
+
+div.menuSection {
+    border-left: 3px solid orange;
+    padding-left: 30px;
+}
+
+div.menuCategories {
+    border-bottom: 3px solid orange;
+}
